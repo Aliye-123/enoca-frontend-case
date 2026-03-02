@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(4px);
+}
+
+.modal__content {
+  position: relative;
+  width: min(520px, 92%);
+  margin: 12vh auto 0;
+  background: var(--card-bg-strong);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.modal__header h3 {
+  margin: 0;
+}
+
+.modal__close {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal__body {
+  margin-top: 12px;
+  color: var(--secondary-text);
+  line-height: 1.6;
+}

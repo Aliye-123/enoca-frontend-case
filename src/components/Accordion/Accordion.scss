@@ -1,0 +1,33 @@
+.accordion {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+
+.accordion__header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  padding: 18px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.accordion__icon {
+  font-size: 18px;
+  color: var(--secondary-text);
+}
+
+.accordion__content {
+  padding: 0 18px 18px;
+  color: var(--secondary-text);
+  line-height: 1.6;
+}
